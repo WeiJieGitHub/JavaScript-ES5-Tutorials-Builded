@@ -1,0 +1,794 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>字符串 · JavaScript ES5 入门教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="array.html" />
+    
+    
+    <link rel="prev" href="variable.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    本书介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JavaScript 语法基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="number.html">
+            
+                <a href="number.html">
+            
+                    
+                    数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="variable.html">
+            
+                <a href="variable.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="object.html">
+            
+                <a href="object.html">
+            
+                    
+                    对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="condition.html">
+            
+                <a href="condition.html">
+            
+                    
+                    条件语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="loop.html">
+            
+                <a href="loop.html">
+            
+                    
+                    循环语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" >
+            
+                <span>
+            
+                    
+                    函数
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" >
+            
+                <span>
+            
+                    
+                    周期任务和计时任务
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../library/">
+            
+                <a href="../library/">
+            
+                    
+                    常用内置对象和方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Math 对象
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Date 对象
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    数字类型的常用方法
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    数组类型的常用方法
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" >
+            
+                <span>
+            
+                    
+                    字符串类型的常用方法
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../advanced/">
+            
+                <a href="../advanced/">
+            
+                    
+                    JavaScript 的运行细节
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    变量和数据类型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    值传递和引用传递
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    变量的作用域
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    作用域和闭包
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    函数 Local 作用域中的特殊变量
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <span>
+            
+                    
+                    原型继承
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" >
+            
+                <span>
+            
+                    
+                    构造函数
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" >
+            
+                <span>
+            
+                    
+                    安全的类型检测
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" >
+            
+                <span>
+            
+                    
+                    异步编程和任务队列
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../todolist.html">
+            
+                <a href="../todolist.html">
+            
+                    
+                    写作计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >字符串</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x58F0;&#x660E;">&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x58F0;&#x660E;</h2>
+<p>&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x4F7F;&#x7528;&#x8FC7;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x53EA;&#x6709;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#xFF0C;&#x90A3;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x7528;&#x6765;&#x8868;&#x793A;&#x6570;&#x5B66;&#x91CC;&#x6216;&#x751F;&#x6D3B;&#x4E2D;&#x7684;&#x6570;&#x5B57;&#x3002;&#x800C;&#x6211;&#x4EEC;&#x5373;&#x5C06;&#x5B66;&#x4E60;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x2014;&#x2014;<strong>&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;</strong>&#x3002;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8868;&#x793A;&#x4E00;&#x5C0F;&#x6BB5;&#x8BDD;&#xFF0C;&#x4E00;&#x6BB5;&#x6587;&#x5B57;&#xFF0C;&#x4EBA;&#x540D;&#xFF0C;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x7B49;&#x7B49;&#x7531;&#x6587;&#x5B57;&#x7EC4;&#x6210;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5728; JavaScript &#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>&apos;......&apos;</code> &#x6216;&#x8005; <code>&quot;......&quot;</code> &#x7684;&#x5F62;&#x5F0F;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> a = <span class="hljs-string">&apos;&#x5305;&#x597D;&#xFF0C;&#x5305;&#x597D;&#xFF01;&#x8FD9;&#x6837;&#x7684;&#x8D81;&#x70ED;&#x5403;&#x4E0B;&#x3002;&apos;</span>; <span class="hljs-comment">// &#x7528; &apos; &#xFF08;&#x5355;&#x5F15;&#x53F7;&#xFF09;&#x5C06;&#x6587;&#x5B57;&#x5305;&#x88F9;&#xFF0C;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</span>
+  <span class="hljs-keyword">var</span> b = <span class="hljs-string">&quot;&#x8FD9;&#x6837;&#x7684;&#x4EBA;&#x8840;&#x9992;&#x5934;&#xFF0C;&#x4EC0;&#x4E48;&#x75E8;&#x75C5;&#x90FD;&#x5305;&#x597D;&#xFF01;&quot;</span>; <span class="hljs-comment">// &#x7528; &quot; &#xFF08;&#x53CC;&#x5F15;&#x53F7;&#xFF09;&#x5C06;&#x6587;&#x5B57;&#x5305;&#x88F9;&#xFF0C;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</span>
+  <span class="hljs-keyword">var</span> c = <span class="hljs-string">&apos;&apos;</span>; <span class="hljs-comment">// &#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x65E2;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5185;&#x5BB9;&#x7684;&#x5B57;&#x7B26;&#x4E32;</span>
+  <span class="hljs-keyword">var</span> d = <span class="hljs-string">&quot;&quot;</span>; <span class="hljs-comment">// &#x540C;&#x4E0A;</span>
+</code></pre>
+<p><br>
+&#x4F46;&#x51E1;&#x7528; <code>&apos;</code> &#x6216;&#x8005; <code>&quot;</code> &#x5305;&#x88F9;&#x8D77;&#x6765;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x90FD;&#x4F1A;&#x53D8;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5305;&#x62EC;&#x6570;&#x5B57;&#x548C;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#xFF0C;&#x7A7A;&#x683C;&#x7B49;&#x7B49;&#x7B49;&#x7B49;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> a = <span class="hljs-string">&apos;10086&apos;</span>; <span class="hljs-comment">// &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5185;&#x5BB9;&#x662F;&#x6570;&#x5B57;</span>
+  <span class="hljs-keyword">var</span> b = <span class="hljs-string">&quot;10010&quot;</span>; <span class="hljs-comment">// &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5185;&#x5BB9;&#x662F;&#x6570;&#x5B57;</span>
+
+  <span class="hljs-keyword">var</span> c = <span class="hljs-string">&quot;10010 + 10086&quot;</span>; <span class="hljs-comment">// &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5185;&#x5BB9;&#x662F;&#x4E00;&#x4E2A;&#x548C;&#x5F0F;</span>
+
+  <span class="hljs-keyword">var</span> d = <span class="hljs-string">&apos;@#$%^&amp;*()&apos;</span>; <span class="hljs-comment">// &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5185;&#x5BB9;&#x662F;&#x4E00;&#x5806;&#x7B26;&#x53F7;</span>
+  <span class="hljs-keyword">var</span> d = <span class="hljs-string">&quot;     &quot;</span>; <span class="hljs-comment">// &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5185;&#x5BB9;&#x662F;&#x4E00;&#x4E32;&#x7A7A;&#x683C;</span>
+</code></pre>
+<h2 id="&#x5355;&#x5F15;&#x53F7;&#x548C;&#x53CC;&#x5F15;&#x53F7;&#x7684;&#x9519;&#x8BEF;&#x914D;&#x5BF9;">&#x5355;&#x5F15;&#x53F7;&#x548C;&#x53CC;&#x5F15;&#x53F7;&#x7684;&#x9519;&#x8BEF;&#x914D;&#x5BF9;</h2>
+<p>&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5728;&#x58F0;&#x660E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528; <code>&apos;</code> &#x6216;&#x8005; <code>&quot;</code> &#x5305;&#x88F9;&#x5185;&#x5BB9;&#x7684;&#x6548;&#x679C;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x4F46;&#x5982;&#x5185;&#x5BB9;&#x4E2D;&#x5305;&#x542B; <code>&apos;</code> &#x6216;&#x8005; <code>&quot;</code> &#x5219;&#x9700;&#x8981;&#x5C0F;&#x5FC3; JavaScript &#x7684;&#x9519;&#x8BEF;&#x914D;&#x5BF9;&#xFF1A;</p>
+<pre><code class="lang-javascript">  // &#x6709;&#x5982;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;
+  // He says:&quot;so far so good&#x3002;&quot;
+
+  // &#x5982;&#x679C;&#x628A;&#x5B83;&#x7528; &quot; &#x5305;&#x88F9;&#x5C31;&#x4F1A;&#x51FA;&#x9519;&#xFF0C;&#x4ECE;&#x4EE3;&#x7801;&#x7684;&#x9AD8;&#x4EAE;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5F97;&#x51FA;&#x6765;&#x3002;
+  // JavaScript &#x5C06;&#x5305;&#x88F9;&#x5B57;&#x7B26;&#x4E32;&#x7684; &quot; &#x548C;&#x5185;&#x5BB9;&#x4E2D;&#x7684; &quot; &#x4EA7;&#x751F;&#x4E86;&#x9519;&#x8BEF;&#x7684;&#x914D;&#x5BF9;
+  // &#x4E8E;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x88AB;&#x9519;&#x8BEF;&#x7684;&#x5206;&#x5272;&#x6210;&#x4E86; &quot;He says:&quot; &#x548C; &quot;&quot;(&#x7A7A;&#x5B57;&#x7B26;&#x4E32;)&#xFF0C;
+  // &#x800C; so far so good &#x88AB;&#x5F53;&#x6210;&#x4E86;&#x4EE3;&#x7801;&#x3002;
+  var a = &quot;He says:&quot;so far so good&#x3002;&quot;&quot;;
+
+  // &#x6B64;&#x65F6;&#x7528; &apos; &#x5305;&#x88F9;&#x5C31;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;
+  var a = &apos;He says:&quot;so far so good&#x3002;&quot;&apos;;
+
+  // &#x5728;&#x5185;&#x5BB9;&#x4E2D;&#x7684; &quot; &#x4E4B;&#x524D;&#x52A0;&#x4E0A; \ &#x4E5F;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;
+  var a = &quot;He says:\&quot;so far so good&#x3002;\&quot;&quot;;
+
+
+
+  // &#x540C;&#x6837;&#x7684;&#xFF0C;&#x6709;&#x5982;&#x4E0B;&#x5B57;&#x7B26;&#x4E32;&#x3002;
+  // I&apos;m starving.
+
+  // &#x5982;&#x679C;&#x76F4;&#x63A5;&#x7528; &apos; &#x5305;&#x88F9;&#x4E5F;&#x4F1A;&#x51FA;&#x9519;
+  // &#x5305;&#x88F9;&#x5B57;&#x7B26;&#x4E32;&#x7684; &apos; &#x548C;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x5BB9;&#x4E2D;&#x7684; &apos; &#x4EA7;&#x751F;&#x4E86;&#x9519;&#x8BEF;&#x7684;&#x914D;&#x5BF9;
+  var b = &apos;I&apos;m starving.&apos;;
+
+  // &#x89E3;&#x51B3;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x7528; &quot; &#x5305;&#x88F9;
+  var b = &quot;I&apos;m starving.&quot;;
+
+  // &#x6216;&#x662F;&#x5728; &apos; &#x524D;&#x52A0;&#x4E0A; \
+  var b = &apos;I\&apos;m starving.&apos;;
+</code></pre>
+<p><br>
+&#x867D;&#x7136; JavaScript &#x5E76;&#x4E0D;&#x4ECB;&#x610F;&#x6211;&#x4EEC;&#x5728;&#x58F0;&#x660E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x7684;&#x662F; <code>&apos;</code> &#x8FD8;&#x662F; <code>&quot;</code> &#x3002;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4EBA;&#x7C7B;&#x5F80;&#x5F80;&#x662F;&#x4ECB;&#x610F;&#x7684;&#xFF0C;&#x65F6;&#x800C;&#x7528; <code>&apos;</code> &#x65F6;&#x800C;&#x7528; <code>&quot;</code> &#x603B;&#x5F52;&#x4F1A;&#x8BA9;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x4E0D;&#x90A3;&#x4E48;&#x5DE5;&#x6574;&#xFF0C;&#x6240;&#x4EE5;&#x5F80;&#x540E;&#x7684;&#x5B9E;&#x4F8B;&#x4EE3;&#x7801;&#x4E2D;&#x4F1A;&#x4F18;&#x5148;&#x4F7F;&#x7528; <code>&apos;</code> &#xFF0C; &#x800C; <code>&quot;</code> &#x53EA;&#x6709;&#x5728;&#x5185;&#x5BB9;&#x4E2D;&#x51FA;&#x73B0; <code>&apos;</code> &#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x5185;&#x5BB9;&#x4E2D;&#x540C;&#x65F6;&#x51FA;&#x73B0;&#x4E86; <code>&apos;</code> &#x548C; <code>&quot;</code>&#xFF0C;&#x6211;&#x4F1A;&#x7528; <code>&apos;</code> &#x5E76;&#x4E14;&#x7ED9;&#x5185;&#x5BB9;&#x4E2D;&#x7684; <code>&apos;</code> &#x6539;&#x4E3A; <code>\&apos;</code>&#x3002;</p>
+<h2 id="&#x62FC;&#x63A5;&#x64CD;&#x4F5C;&#x7B26;">&#x62FC;&#x63A5;&#x64CD;&#x4F5C;&#x7B26;</h2>
+<p>&#x5BF9;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>+</code> &#xFF08;&#x62FC;&#x63A5;&#x64CD;&#x4F5C;&#x7B26;&#xFF09;&#x6765;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x5230;&#x4E00;&#x5757;&#x3002;&#x62FC;&#x63A5;&#x64CD;&#x4F5C;&#x7B26; <code>+</code> &#x548C;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x7684;&#x52A0;&#x6CD5;&#x64CD;&#x4F5C;&#x7B26; <code>+</code> &#x957F;&#x5F97;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x4E0A;&#x7528;&#x6CD5;&#x7565;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x62FC;&#x63A5;&#x64CD;&#x4F5C;&#x7B26;&#x662F;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x5230;&#x4E00;&#x5757;&#xFF0C;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> a = <span class="hljs-string">&apos;&#x4E24;&#x4E2A;&#x9EC4;&#x9E42;&#x9E23;&#x7FE0;&#x67F3;&#xFF0C;&apos;</span>;
+  <span class="hljs-keyword">var</span> b = <span class="hljs-string">&apos;&#x4E00;&#x884C;&#x767D;&#x9E6D;&#x4E0A;&#x9752;&#x5929;&#x3002;&apos;</span>;
+
+  <span class="hljs-keyword">var</span> c = a + b; <span class="hljs-comment">// &#x5C06; a &#x548C; b &#x62FC;&#x63A5;&#x5230;&#x4E00;&#x8D77;</span>
+  <span class="hljs-built_in">console</span>.log(c); <span class="hljs-comment">// &#x5F97;&#x5230;&#x201C;&#x4E24;&#x4E2A;&#x9EC4;&#x9E42;&#x9E23;&#x7FE0;&#x67F3;&#xFF0C;&#x4E00;&#x884C;&#x767D;&#x9E6D;&#x4E0A;&#x9752;&#x5929;&#x3002;&#x201D;</span>
+
+  <span class="hljs-keyword">var</span> d = b + a; <span class="hljs-comment">// &#x5C06; b &#x548C; a &#x62FC;&#x63A5;</span>
+  <span class="hljs-built_in">console</span>.log(e); <span class="hljs-comment">// &#x5F97;&#x5230;&#x201C;&#x4E00;&#x884C;&#x767D;&#x9E6D;&#x4E0A;&#x9752;&#x5929;&#x3002;&#x4E24;&#x4E2A;&#x9EC4;&#x9E42;&#x9E23;&#x7FE0;&#x67F3;&#xFF0C;&#x201D;</span>
+
+  <span class="hljs-keyword">var</span> e = <span class="hljs-string">&apos;&#x7A97;&#x542B;&#x897F;&#x5CAD;&#x5343;&#x79CB;&#x96EA;&#xFF0C;&apos;</span> + <span class="hljs-string">&apos;&#x95E8;&#x6CCA;&#x4E1C;&#x5434;&#x4E07;&#x91CC;&#x8239;&#x3002;&apos;</span>;
+  <span class="hljs-built_in">console</span>.log(e); <span class="hljs-comment">// &#x5F97;&#x5230;&#x201C;&#x7A97;&#x542B;&#x897F;&#x5CAD;&#x5343;&#x79CB;&#x96EA;&#xFF0C;&#x95E8;&#x6CCA;&#x4E1C;&#x5434;&#x4E07;&#x91CC;&#x8239;&#x3002;&#x201D;</span>
+</code></pre>
+<p><br>
+&#x4E5F;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x62FC;&#x63A5;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> a = <span class="hljs-string">&apos;&#x4ECE;&#x524D;&#x7684;&#x65E5;&#x8272;&#x53D8;&#x5F97;&#x6162;&#x3002;&apos;</span> + <span class="hljs-string">&apos;&#x8F66;&#xFF0C;&#x9A6C;&#xFF0C;&#x90AE;&#x4EF6;&#x90FD;&#x6162;&#x3002;&apos;</span> + <span class="hljs-string">&apos;&#x4E00;&#x751F;&#x53EA;&#x591F;&#x7231;&#x4E00;&#x4E2A;&#x4EBA;&#x3002;&apos;</span>;
+  <span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// &#x5F97;&#x5230;&#x201C;&#x4ECE;&#x524D;&#x7684;&#x65E5;&#x8272;&#x53D8;&#x5F97;&#x6162;&#x3002;&#x8F66;&#xFF0C;&#x9A6C;&#xFF0C;&#x90AE;&#x4EF6;&#x90FD;&#x6162;&#x3002;&#x4E00;&#x751F;&#x53EA;&#x591F;&#x7231;&#x4E00;&#x4E2A;&#x4EBA;&#x3002;&#x201D;</span>
+
+  <span class="hljs-keyword">var</span> b = <span class="hljs-string">&apos;&#x4ECE;&#x524D;&#x7684;&#x9501;&#x4E5F;&#x597D;&#x770B;&#x3002;&apos;</span> + <span class="hljs-string">&apos;&#x94A5;&#x5319;&#x7CBE;&#x7F8E;&#x6709;&#x6837;&#x5B50;&#x3002;&apos;</span> + <span class="hljs-string">&apos;&#x4F60;&#x9501;&#x4E86;&#xFF0C;&#x4EBA;&#x5BB6;&#x5C31;&#x61C2;&#x4E86;&#x3002;&apos;</span>;
+  <span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// &#x5F97;&#x5230;&#x201C;&#x4ECE;&#x524D;&#x7684;&#x9501;&#x4E5F;&#x597D;&#x770B;&#x3002;&#x94A5;&#x5319;&#x7CBE;&#x7F8E;&#x6709;&#x6837;&#x5B50;&#x3002;&#x4F60;&#x9501;&#x4E86;&#xFF0C;&#x4EBA;&#x5BB6;&#x5C31;&#x61C2;&#x4E86;&#x3002;&#x201D;</span>
+
+  <span class="hljs-keyword">var</span> c = <span class="hljs-string">&apos;&#x94A5;&#x5319;&#x7CBE;&#x7F8E;&#x6709;&#x6837;&#x5B50;&#x3002;&apos;</span>;
+  <span class="hljs-keyword">var</span> d = <span class="hljs-string">&apos;&#x4F60;&#x9501;&#x4E86;&#xFF0C;&#x4EBA;&#x5BB6;&#x5C31;&#x61C2;&#x4E86;&#x3002;&apos;</span>;
+
+  <span class="hljs-keyword">var</span> e = <span class="hljs-string">&apos;&#x4ECE;&#x524D;&#x7684;&#x9501;&#x4E5F;&#x597D;&#x770B;&#x3002;&apos;</span> + c + d + <span class="hljs-string">&apos;&#x2014;&#x2014;&#x300A;&#x4ECE;&#x524D;&#x6162;&#x300B;&#x4F5C;&#x8005;&#xFF1A;&#x6728;&#x5FC3;&apos;</span>;
+  <span class="hljs-built_in">console</span>.log(e); <span class="hljs-comment">// &#x5F97;&#x5230;&#x201C;&#x4ECE;&#x524D;&#x7684;&#x9501;&#x4E5F;&#x597D;&#x770B;&#x3002;&#x94A5;&#x5319;&#x7CBE;&#x7F8E;&#x6709;&#x6837;&#x5B50;&#x3002;&#x4F60;&#x9501;&#x4E86;&#xFF0C;&#x4EBA;&#x5BB6;&#x5C31;&#x61C2;&#x4E86;&#x3002;&#x2014;&#x2014;&#x300A;&#x4ECE;&#x524D;&#x6162;&#x300B;&#x4F5C;&#x8005;&#xFF1A;&#x6728;&#x5FC3;&#x201D;</span>
+</code></pre>
+<h2 id="&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;&#x7684;&#x62FC;&#x63A5;">&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;&#x7684;&#x62FC;&#x63A5;</h2>
+<p>&#x5982;&#x679C;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;&#x7528;&#x62FC;&#x63A5;&#x64CD;&#x4F5C;&#x7B26;&#x62FC;&#x63A5;&#xFF0C; JavaScript &#x4F1A;&#x5C06;&#x6570;&#x5B57;&#x53D8;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x62FC;&#x63A5;&#x64CD;&#x4F5C;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span> + <span class="hljs-number">2</span> + <span class="hljs-number">3</span>;
+  <span class="hljs-keyword">var</span> b = <span class="hljs-string">&apos;1 + 2 + 3 &#x7684;&#x7ED3;&#x679C;&#x662F; &apos;</span> + a;
+  <span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// &#x8F93;&#x51FA; &#x201C;1 + 2 + 3 &#x7684;&#x7ED3;&#x679C;&#x662F; 6&#x201D;</span>
+
+  <span class="hljs-keyword">var</span> c = <span class="hljs-string">&apos;&#x6211;&#x7231;&#x4F60;&#x5C31;&#x662F; &apos;</span> + <span class="hljs-number">5</span> + <span class="hljs-number">2</span> + <span class="hljs-number">0</span>; <span class="hljs-comment">// #1</span>
+  <span class="hljs-built_in">console</span>.log(c); <span class="hljs-comment">// &#x201C;&#x6211;&#x7231;&#x4F60;&#x5C31;&#x662F; 520&#x201D;</span>
+
+  <span class="hljs-keyword">var</span> d = <span class="hljs-number">100</span> + <span class="hljs-number">86</span> + <span class="hljs-string">&apos; &#x662F;&#x4E2D;&#x56FD;&#x79FB;&#x4E0D;&#x52A8;&#x7684;&#x670D;&#x52A1;&#x7535;&#x8BDD;&#x3002;&apos;</span>; <span class="hljs-comment">// #2</span>
+  <span class="hljs-built_in">console</span>.log(d); <span class="hljs-comment">// &#x201C;186 &#x662F;&#x4E2D;&#x56FD;&#x79FB;&#x4E0D;&#x52A8;&#x7684;&#x670D;&#x52A1;&#x7535;&#x8BDD;&#x3002;&#x201D;</span>
+</code></pre>
+<ul>
+<li>&#x5728;&#x64CD;&#x4F5C;&#x7B26;&#x4F18;&#x5148;&#x7EA7;&#x76F8;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x4E0B; JavaScript &#x662F;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x6C42;&#x503C;&#x3002;</li>
+<li>#1 &#x8FD9;&#x91CC;&#x5148;&#x8BA1;&#x7B97; <code>&apos;&#x6211;&#x7231;&#x4F60;&#x5C31;&#x662F; &apos; + 5</code> &#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x6570;&#x5B57; <code>2</code> &#x53C8;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x7528;&#x4E0A;&#x4E00;&#x6B65;&#x7684;&#x7ED3;&#x679C;&#x62FC;&#x63A5;&#x6570;&#x5B57; <code>0</code> &#x5F97;&#x5230;&#x6700;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x3002;</li>
+<li>#2 &#x8FD9;&#x91CC;&#x5148;&#x8BA1;&#x7B97; <code>100 + 86</code> &#x662F;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#x7684;&#x76F8;&#x52A0;&#xFF0C; &#x5F97;&#x5230;&#x7ED3;&#x679C;&#x6570;&#x5B57; <code>186</code> &#x518D;&#x5C06;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x8DDF;&#x540E;&#x8FB9;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x3002;</li>
+</ul>
+<h2 id="&#x8F6C;&#x4E49;&#x5B57;&#x7B26;">&#x8F6C;&#x4E49;&#x5B57;&#x7B26;</h2>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x6709;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x5B57;&#x7B26;&#x53EF;&#x4EE5;&#x8BA9; JavaScript &#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x7279;&#x6B8A;&#x5904;&#x7406;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x89C1;&#x8FC7;&#x7684; <code>\&apos;</code> &#x548C; <code>\&quot;</code>&#xFF0C;&#x8FD9;&#x7C7B;&#x5B57;&#x7B26;&#x53EB;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#xFF0C;&#x5B83;&#x4EEC;&#x7B97;&#x4F5C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3002; JavaScript &#x4E2D;&#x7684;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#x8DDF;&#x8BB8;&#x591A;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E00;&#x6837;&#xFF0C;&#x662F;&#x5728;&#x5B57;&#x7B26;&#x524D;&#x52A0;&#x4E00;&#x4E2A; <code>\</code> &#x5B9E;&#x73B0;&#x3002;&#x5305;&#x62EC;&#x524D;&#x9762;&#x4ECB;&#x7ECD;&#x7684; <code>\&apos;</code> &#x548C; <code>\&quot;</code>&#xFF0C;&#x8FD9;&#x91CC;&#x518D;&#x7EE7;&#x7EED;&#x4ECB;&#x7ECD; <code>\n</code> &#x548C; <code>\\</code>&#x3002;</p>
+<p>&#x524D;&#x9762;&#x4ECB;&#x7ECD;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x90FD;&#x662F;&#x663E;&#x793A;&#x5728;&#x4E00;&#x884C;&#x4EE5;&#x5185;&#x7684;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x53EF;&#x4EE5;&#x6362;&#x884C;&#x663E;&#x793A;&#x7684;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x52A0;&#x5165; <code>\n</code> &#xFF0C;&#x6240;&#x4EE5; <code>\n</code> &#x53C8;&#x53EB;&#x505A;&#x6362;&#x884C;&#x7B26;&#x3002;</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> a = <span class="hljs-string">&apos;&#x4ECE;&#x524D;&#x7684;&#x65E5;&#x8272;&#x53D8;&#x5F97;&#x6162;&#x3002;\n&apos;</span> + <span class="hljs-string">&apos;&#x8F66;&#xFF0C;&#x9A6C;&#xFF0C;&#x90AE;&#x4EF6;&#x90FD;&#x6162;&#x3002;\n&apos;</span> + <span class="hljs-string">&apos;&#x4E00;&#x751F;&#x53EA;&#x591F;&#x7231;&#x4E00;&#x4E2A;&#x4EBA;&#x3002;\n&apos;</span>;
+  <span class="hljs-built_in">console</span>.log(a);
+  <span class="hljs-comment">// &#x4ECE;&#x524D;&#x7684;&#x65E5;&#x8272;&#x53D8;&#x5F97;&#x6162;&#x3002;</span>
+  <span class="hljs-comment">// &#x8F66;&#xFF0C;&#x9A6C;&#xFF0C;&#x90AE;&#x4EF6;&#x90FD;&#x6162;&#x3002;</span>
+  <span class="hljs-comment">// &#x4E00;&#x751F;&#x53EA;&#x591F;&#x7231;&#x4E00;&#x4E2A;&#x4EBA;&#x3002;</span>
+</code></pre>
+<p><br>
+&#x5982;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x9700;&#x8981;&#x663E;&#x793A; <code>\</code> &#xFF0C;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7528; <code>\\</code>&#xFF0C;&#x4EE3;&#x66FF;&#x5355;&#x4E2A;&#x7684; <code>\</code>&#x3002;</p>
+<pre><code class="lang-javascript">  var a = &apos;&#x82F1;&#x6587;&#x7684;&#x53CD;&#x659C;&#x6760;&#x662F; \&apos;; // &#x62A5;&#x9519;&#xFF0C; JavaScript &#x628A;&#x7ED3;&#x5C3E;&#x7684; \&apos; &#x5F53;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x3002;
+
+  var a = &apos;&#x82F1;&#x6587;&#x7684;&#x53CD;&#x659C;&#x6760;&#x662F; \\&apos;;
+  console.log(a); // &#x8F93;&#x51FA; &#x201C;&#x82F1;&#x6587;&#x7684;&#x53CD;&#x659C;&#x6760;&#x662F; \&#x201D;
+
+  var b = &apos;&#x6362;&#x884C;&#x7B26;&#x662F; \n &#x3002;&apos;;
+  console.log(b); // &#x8F93;&#x51FA; &#x201C;&#x6362;&#x884C;&#x7B26;&#x662F; &#x201D; &#x548C;&#x5B83;&#x7684;&#x4E0B;&#x4E00;&#x884C; &#x201C; &#x3002;&#x201D;
+
+  var b = &apos;&#x6362;&#x884C;&#x7B26;&#x662F; \\n &#x3002;&apos;;
+  console.log(b); // &#x8F93;&#x51FA; &#x201C;&#x6362;&#x884C;&#x7B26;&#x662F; \n &#x3002;&#x201D;
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x4ECB;&#x7ECD;&#x4E86;&#x6700;&#x5E38;&#x7528;&#x7684;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#xFF0C;&#x66F4;&#x591A;&#x7684;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x67E5;&#x627E;&#x76F8;&#x5173;&#x8D44;&#x6599;&#x4E86;&#x89E3;&#x3002;</p>
+<h2 id="&#x67E5;&#x770B;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;">&#x67E5;&#x770B;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;</h2>
+<h2 id="&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x53D6;&#x5355;&#x4E2A;&#x5B57;&#x7B26;">[] &#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x53D6;&#x5355;&#x4E2A;&#x5B57;&#x7B26;</h2>
+<h2 id="&#x5B57;&#x7B26;&#x4E32;&#x5207;&#x7247;">&#x5B57;&#x7B26;&#x4E32;&#x5207;&#x7247;</h2>
+<h2 id="&#x4F7F;&#x7528;-indexof-&#x5224;&#x65AD;&#x5B50;&#x4E32;">&#x4F7F;&#x7528; indexOf &#x5224;&#x65AD;&#x5B50;&#x4E32;</h2>
+<h2 id="&#x5B57;&#x7B26;&#x4E32;&#x7EC3;&#x4E60;">&#x5B57;&#x7B26;&#x4E32;&#x7EC3;&#x4E60;</h2>
+<ol>
+<li><p>&#x4E0B;&#x9762;&#x58F0;&#x660E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x54EA;&#x4E9B;&#x662F;&#x5BF9;&#x7684;&#x54EA;&#x4E9B;&#x662F;&#x9519;&#x7684;&#x3002;</p>
+<pre><code>var a = &apos; &apos;;
+var b = &quot; &apos;;
+var c = &apos;&#x6211;&#x662F;&#x5B57;&#x7B26;&#x4E32;\n&apos;;
+var d = \&apos; &#x6211;&#x662F;&#x5B57;&#x7B26;&#x4E32; \&apos;;
+var e = &apos;\&apos;\&apos;\&apos;\&apos;\&apos;\&apos;&apos;;
+var f = &quot; &#x6211;&#x662F;&#x5B57;&#x7B26;&#x4E32; \&quot;&quot;;
+var g = &apos;:&quot;;
+var h = &quot;var&quot;;
+var i = &quot;I&apos;d like that book.&quot;;
+var j = &quot;I\&apos;d like that book.&quot;;
+var k = &quot;1000 / 1.&quot;;
+</code></pre></li>
+<li><p>&#x9605;&#x8BFB;&#x4E0B;&#x8FB9;&#x7684;&#x4EE3;&#x7801;&#x56DE;&#x7B54;&#x95EE;&#x9898;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = <span class="hljs-string">&apos;&#x6211;&#x6253;&#x6C5F;&#x5357;&#x8D70;&#x8FC7;&#x3002;&apos;</span>;
+<span class="hljs-keyword">var</span> b = <span class="hljs-string">&apos;&#x90A3;&#x7B49;&#x5728;&#x5B63;&#x8282;&#x91CC;&#x7684;&#x5BB9;&#x989C;&#x5982;&#x83B2;&#x82B1;&#x7684;&#x5F00;&#x843D;&#x3002;&apos;</span>;
+<span class="hljs-keyword">var</span> c = <span class="hljs-string">&apos;&#x4E1C;&#x98CE;&#x4E0D;&#x6765;&#xFF0C;&#x4E09;&#x6708;&#x7684;&#x67F3;&#x7D6E;&#x4E0D;&#x98DE;&#x3002;&apos;</span>;
+<span class="hljs-keyword">var</span> d = <span class="hljs-string">&apos;&#x4F60;&#x5E95;&#x5FC3;&#x5982;&#x5C0F;&#x5C0F;&#x7684;&#x5BC2;&#x5BDE;&#x7684;&#x57CE;&#x3002;&apos;</span>;
+<span class="hljs-keyword">var</span> e = <span class="hljs-string">&apos;&#x6070;&#x82E5;&#x9752;&#x77F3;&#x7684;&#x8857;&#x9053;&#x5411;&#x665A;&#x3002;&apos;</span>;
+<span class="hljs-keyword">var</span> f = <span class="hljs-string">&apos;&#x8DEB;&#x97F3;&#x4E0D;&#x54CD;&#xFF0C;&#x4E09;&#x6708;&#x7684;&#x6625;&#x5E37;&#x4E0D;&#x63ED;&#x3002;&apos;</span>;
+<span class="hljs-keyword">var</span> g = <span class="hljs-string">&apos;&#x4F60;&#x5E95;&#x5FC3;&#x662F;&#x5C0F;&#x5C0F;&#x7684;&#x7A97;&#x6249;&#x7D27;&#x63A9;&#x3002;&apos;</span>;
+<span class="hljs-keyword">var</span> h = <span class="hljs-string">&apos;&#x6211;&#x8FBE;&#x8FBE;&#x7684;&#x9A6C;&#x8E44;&#x662F;&#x7F8E;&#x4E3D;&#x7684;&#x9519;&#x8BEF;&#x3002;&apos;</span>;
+<span class="hljs-keyword">var</span> i = <span class="hljs-string">&apos;&#x6211;&#x4E0D;&#x662F;&#x5F52;&#x4EBA;&#xFF0C;&#x662F;&#x4E2A;&#x8FC7;&#x5BA2;&#x3002;&apos;</span>;
+</code></pre>
+<ul>
+<li>a. &#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32; <code>a</code> &#x7684;&#x957F;&#x5EA6;&#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>b. &#x83B7;&#x53D6;&#x5168;&#x8BD7;&#x957F;&#x5EA6;&#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>c. &#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;&#x4E0B;&#x6807;&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32; <code>b</code> &#x4E2D;&#x7684; &#x201C;&#x843D;&#x201D; &#x5B57;&#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>d. &#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;&#x4E0B;&#x6807;&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32; <code>c</code> &#x4E2D;&#x7684; &#x201C;&#x4E09;&#x201D; &#x5B57;&#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>e. &#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;&#x4E0B;&#x6807;&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32; <code>d</code> &#x4E2D;&#x7684; &#x201C;&#x4F60;&#x201D; &#x5B57;&#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>f. &#x901A;&#x8FC7; <code>slice</code> &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32; <code>f</code> &#x4E2D;&#x7684; &#x201C;&#x8DEB;&#x97F3;&#x4E0D;&#x54CD;&#x201D; &#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>g. &#x901A;&#x8FC7; <code>slice</code> &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32; <code>g</code> &#x4E2D;&#x7684; &#x201C;&#x5C0F;&#x5C0F;&#x201D; &#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>h. &#x901A;&#x8FC7; <code>slice</code> &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32; <code>h</code> &#x4E2D;&#x7684; &#x201C;&#x7F8E;&#x4E3D;&#x7684;&#x9519;&#x8BEF;&#x3002;&#x201D; &#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>i. &#x901A;&#x8FC7; <code>slice</code> &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32; <code>i</code> &#x4E2D;&#x7684; &#x201C;&#x6211;&#x4E0D;&#x662F;&#x5F52;&#x4EBA;&#x201D; &#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x9605;&#x8BFB;&#x4E0B;&#x8FB9;&#x7684;&#x4EE3;&#x7801;&#x5E76;&#x8BF4;&#x51FA; <code>a, b, c, d, e, f, g, h</code> &#x5404;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x662F;&#x4EC0;&#x4E48;&#x3002;</p>
+<pre><code class="lang-javascript"> <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span> + <span class="hljs-number">2</span> + <span class="hljs-number">3</span> + <span class="hljs-string">&apos;&#x6728;&#x5934;&#x4EBA;&apos;</span>;
+
+ <span class="hljs-keyword">var</span> num1 = <span class="hljs-number">3</span>, num2 = <span class="hljs-number">8</span>;
+ <span class="hljs-keyword">var</span> b = ++num1 + <span class="hljs-string">&apos;&#x54C8;&#x54C8;&apos;</span> + num2--; <span class="hljs-comment">// &#x63D0;&#x793A; ++ &#x548C; -- &#x7684;&#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x4E8E; + </span>
+
+ <span class="hljs-keyword">var</span> str1 = <span class="hljs-string">&apos;&#x6D41;&#x8A00;&#x50CF;&#x626C;&#x82B1;&#x4E00;&#x6837;&#x98DE;&#x7740;&apos;</span>;
+ <span class="hljs-keyword">var</span> c = str1 + str1.slice(<span class="hljs-number">7</span>, <span class="hljs-number">9</span>) + str1.length;
+
+ <span class="hljs-keyword">var</span> str2 = <span class="hljs-string">&apos;&#x4F3C;&#x6C34;&#x6D41;&#x5E74;&#x624D;&#x662F;&#x4E00;&#x4E2A;&#x4EBA;&#x7684;&#x4E00;&#x5207;&#xFF0C;&#x5176;&#x4F59;&#x5168;&#x662F;&#x7247;&#x523B;&#x7684;&#x6B22;&#x6109;&#x548C;&#x4E0D;&#x5E78;&#x3002;&apos;</span>;
+ <span class="hljs-keyword">var</span> d = str2.slice(<span class="hljs-number">0</span>, str2.length);
+
+ <span class="hljs-keyword">var</span> str3 = <span class="hljs-string">&apos;&#x5DE8;&#x5927;&#x7684;&#x8D22;&#x5BCC;&#x80CC;&#x540E;&#xFF0C;&#x90FD;&#x9690;&#x85CF;&#x7740;&#x7F6A;&#x6076;&apos;</span>, len1 = str3.length;
+ <span class="hljs-keyword">var</span> e = str3[--len1];
+
+ <span class="hljs-keyword">var</span> f = str3[<span class="hljs-number">0</span>] + str3[<span class="hljs-number">13</span>];
+
+ <span class="hljs-keyword">var</span> num3 = <span class="hljs-number">5</span>, str4 = <span class="hljs-string">&apos;&#x6700;&#x662F;&#x90A3;&#x4E00;&#x4F4E;&#x5934;&#x7684;&#x6E29;&#x67D4;&apos;</span>;
+ <span class="hljs-keyword">var</span> g = str4[num3 + <span class="hljs-number">2</span> - <span class="hljs-number">1</span>];
+ <span class="hljs-keyword">var</span> h = str4[<span class="hljs-string">&apos;5&apos;</span>];
+</code></pre>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="variable.html" class="navigation navigation-prev " aria-label="Previous page: 变量">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="array.html" class="navigation navigation-next " aria-label="Next page: 数组">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"字符串","level":"1.2.3","depth":2,"next":{"title":"数组","level":"1.2.4","depth":2,"path":"basics/array.md","ref":"basics/array.md","articles":[]},"previous":{"title":"变量","level":"1.2.2","depth":2,"path":"basics/variable.md","ref":"basics/variable.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","-prism","highlight","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript ES5 入门教程","language":"zh","gitbook":"*","description":"正在加紧创作..."},"file":{"path":"basics/string.md","mtime":"2017-02-20T19:23:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-21T13:53:28.439Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
