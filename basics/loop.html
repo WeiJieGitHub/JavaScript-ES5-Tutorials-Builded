@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>循环语句 · JavaScript ES5 入门教程</title>
+        <title>循环语句 · JavaScript 入门教程</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -864,6 +864,40 @@ while(&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6210;&#x7ACB;) {
 <p> &#x56E0;&#x4E3A;<code>animals</code>&#x662F;&#x4E2A;&#x5BF9;&#x8C61;&#x6240;&#x4EE5;<code>#1</code>&#x5904;&#x7684;&#x7B2C;&#x4E00;&#x5C42;&#x5FAA;&#x73AF;&#x4F7F;&#x7528;<code>for...in</code>&#x8BED;&#x53E5;&#xFF0C;<code>#2</code>&#x5904;&#x7684;&#x7B2C;&#x4E8C;&#x5C42;&#x5FAA;&#x73AF;&#x904D;&#x5386;<code>animals</code>&#x5C5E;&#x6027;&#xFF08;&#x662F;&#x4E2A;&#x6570;&#x7EC4;&#xFF09;&#x7684;&#x6210;&#x5458;&#x3002;</p>
 </blockquote>
 <h2 id="&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x7EC3;&#x4E60;">&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x7EC3;&#x4E60;</h2>
+<ol>
+<li><p>&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;<code>nums</code>&#xFF0C;&#x5199;&#x4EE3;&#x7801;&#x5C06;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x5E73;&#x65B9;&#x3002;</p>
+<pre><code> var nums = [2, 4, 6, 8, 9];
+ &#x300C;&#x4F60;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x300D;
+ console.log(nums); // [4, 16, 36, 64, 81]
+ &#x6CE8;&#x610F;&#xFF0C;&#x65E0;&#x8BBA;&#x6570;&#x7EC4;&#x6210;&#x5458;&#x7684;&#x6570;&#x91CF;&#x6709;&#x591A;&#x5C11;&#xFF0C;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x7684;&#x5927;&#x5C0F;&#x662F;&#x591A;&#x5C11;&#x300C;&#x4F60;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x300D;&#x4F9D;&#x7136;&#x8981;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;
+</code></pre><ul>
+<li>a. &#x4F7F;&#x7528;<code>while</code>&#x8BED;&#x53E5;&#x5B8C;&#x6210;&#x4EE3;&#x7801;</li>
+<li>b. &#x4F7F;&#x7528;<code>do...while</code>&#x8BED;&#x53E5;&#x5B8C;&#x6210;&#x4EE3;&#x7801;</li>
+<li>c. &#x4F7F;&#x7528;<code>for</code>&#x8BED;&#x53E5;&#x5B8C;&#x6210;&#x4EE3;&#x7801;</li>
+</ul>
+</li>
+<li><p>&#x6B27;&#x51E0;&#x91CC;&#x5F97;&#x7B97;&#x6CD5;&#x662F;&#x4E00;&#x79CD;&#x6C42;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;&#x7684;&#x6570;&#x503C;&#x7B97;&#x6CD5;&#xFF0C;&#x6700;&#x65E9;&#x51FA;&#x73B0;&#x4E8E;&#x6B27;&#x51E0;&#x91CC;&#x5F97;&#x7684;&#x300A;&#x51E0;&#x4F55;&#x539F;&#x672C;&#x300B;&#x4E2D;&#x3002;&#x6211;&#x4EEC;&#x8981;&#x6C42;<script type="math/tex; ">a</script>&#x548C;<script type="math/tex; ">b</script>&#x7684;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x6B65;&#x9AA4;&#x8BA1;&#x7B97;&#xFF1A;</p>
+<ol>
+<li>&#x5C06;<script type="math/tex; ">a</script> <script type="math/tex; ">b</script>&#x5206;&#x522B;&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;<code>n</code> <code>m</code>&#x3002;</li>
+<li>&#x5224;&#x65AD;<code>m</code>&#x662F;&#x5426;&#x4E3A;<code>0</code>&#xFF0C;&#x5982;&#x679C;&#x4E3A;<code>0</code>&#x90A3;&#x4E48;&#x6B64;&#x65F6;<code>n</code>&#x5C31;&#x662F;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4E3A;<code>0</code>&#x5C31;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;</li>
+<li>&#x5C06;<code>m</code>&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;<code>t</code></li>
+<li>&#x5C06;<code>n % m</code>&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;<code>m</code></li>
+<li>&#x5C06;<code>t</code>&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;<code>n</code></li>
+<li><p>&#x56DE;&#x5230;&#x6B65;&#x9AA4; 2</p>
+<pre><code>&#x6C42; 12 28 &#x7684;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;
+var n = 12, m = 28;
+&#x300C;&#x4F60;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x300D;
+console.log(n); // 4
+</code></pre></li>
+</ol>
+</li>
+<li><p>&#x5199;&#x4EE3;&#x7801;&#x5C06;&#x5206;&#x6570;&#x7EA6;&#x5206;&#x3002;&#x63D0;&#x793A;&#xFF1A;&#x5C06;&#x5206;&#x5B50;&#x548C;&#x5206;&#x6BCD;&#x8D4B;&#x503C;&#x7ED9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x6B27;&#x51E0;&#x91CC;&#x5F97;&#x7B97;&#x6CD5;&#x6C42;&#x5F97;&#x5206;&#x5B50;&#x548C;&#x5206;&#x6BCD;&#x7684;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x5206;&#x5B50;&#x5206;&#x6BCD;&#x540C;&#x9664;&#x4EE5;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;&#xFF0C;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x5206;&#x6570;&#x7684;&#x7EA6;&#x5206;&#x3002;</p>
+<pre><code> &#x5C06;&#x5206;&#x6570; 12&#xFF0F;28 &#x7EA6;&#x5206;
+ var n = 12, m = 28;
+ &#x300C;&#x4F60;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x300D;
+ console.log(n, m); // 3 7
+</code></pre></li>
+</ol>
 
                                 
                                 </section>
@@ -903,7 +937,7 @@ while(&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6210;&#x7ACB;) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"循环语句","level":"1.2.7","depth":2,"next":{"title":"函数","level":"1.2.8","depth":2,"ref":"","articles":[]},"previous":{"title":"条件语句","level":"1.2.6","depth":2,"path":"basics/condition.md","ref":"basics/condition.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","-prism","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript ES5 入门教程","language":"zh","gitbook":"*","description":"正在加紧创作..."},"file":{"path":"basics/loop.md","mtime":"2017-02-24T10:12:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-24T10:20:44.982Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"循环语句","level":"1.2.7","depth":2,"next":{"title":"函数","level":"1.2.8","depth":2,"ref":"","articles":[]},"previous":{"title":"条件语句","level":"1.2.6","depth":2,"path":"basics/condition.md","ref":"basics/condition.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","-prism","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"serif","size":2},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 入门教程","language":"zh","gitbook":"*","description":"正在加紧创作..."},"file":{"path":"basics/loop.md","mtime":"2017-02-24T14:02:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-24T14:03:40.417Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
