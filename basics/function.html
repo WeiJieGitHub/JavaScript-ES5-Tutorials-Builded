@@ -1460,6 +1460,38 @@ item2.sayPrice(); <span class="hljs-comment">// #3</span>
 fn(sayPrice); <span class="hljs-comment">// #4</span>
 </code></pre>
 </li>
+<li><p>&#x4E0B;&#x8FB9;&#x4EE3;&#x7801;<code>#1~#4</code>&#x5404;&#x8F93;&#x51FA;&#x4EC0;&#x4E48;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> fn = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> x = <span class="hljs-number">5</span>;
+  <span class="hljs-keyword">var</span> a = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(x);
+  }
+  a(); <span class="hljs-comment">// #1</span>
+
+  <span class="hljs-keyword">var</span> b = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(x);
+  }
+  b(<span class="hljs-number">3</span>); <span class="hljs-comment">// #2</span>
+
+  <span class="hljs-keyword">var</span> c = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">9</span>;
+    <span class="hljs-built_in">console</span>.log(x);
+  }
+  b(); <span class="hljs-comment">// #3</span>
+
+  <span class="hljs-keyword">var</span> d = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-built_in">console</span>.log(x);
+    }
+  }
+  d()(); <span class="hljs-comment">// #4</span>
+}
+</code></pre>
+<blockquote>
+<p>&#x5176;&#x4E2D;<code>d()()</code>&#x662F;&#x4E00;&#x79CD;&#x7B80;&#x5199;&#x5F62;&#x5F0F;&#xFF0C;&#x56E0;&#x4E3A;<code>d()</code>&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5728;&#x540E;&#x9762;&#x518D;&#x52A0;&#x4E2A;<code>()</code>&#x5C31;&#x662F;&#x5BF9;<code>d()</code>&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x518D;&#x8C03;&#x7528;&#xFF0C;&#x5C31;&#x5199;&#x6210;&#x4E86;<code>d()()</code>&#x3002;</p>
+</blockquote>
+</li>
 </ol>
 
                                 
@@ -1500,7 +1532,7 @@ fn(sayPrice); <span class="hljs-comment">// #4</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"函数","level":"1.2.9","depth":2,"next":{"title":"周期任务和计时任务","level":"1.2.10","depth":2,"ref":"","articles":[]},"previous":{"title":"循环语句","level":"1.2.8","depth":2,"path":"basics/loop.md","ref":"basics/loop.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","-prism","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"serif","size":2},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 入门教程","language":"zh","gitbook":"*","description":"正在加紧创作..."},"file":{"path":"basics/function.md","mtime":"2017-03-03T11:01:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-03T11:01:38.054Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"函数","level":"1.2.9","depth":2,"next":{"title":"周期任务和计时任务","level":"1.2.10","depth":2,"ref":"","articles":[]},"previous":{"title":"循环语句","level":"1.2.8","depth":2,"path":"basics/loop.md","ref":"basics/loop.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","-prism","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"serif","size":2},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 入门教程","language":"zh","gitbook":"*","description":"正在加紧创作..."},"file":{"path":"basics/function.md","mtime":"2017-03-03T11:12:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-03T11:13:13.823Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
