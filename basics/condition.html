@@ -354,7 +354,7 @@
                 <span>
             
                     
-                    变量和数据类型
+                    值和引用
             
                 </span>
             
@@ -367,7 +367,7 @@
                 <span>
             
                     
-                    值传递和引用传递
+                    数据类型
             
                 </span>
             
@@ -380,7 +380,7 @@
                 <span>
             
                     
-                    变量的作用域
+                    原型继承
             
                 </span>
             
@@ -393,7 +393,7 @@
                 <span>
             
                     
-                    作用域和闭包
+                    安全的类型检测
             
                 </span>
             
@@ -406,7 +406,7 @@
                 <span>
             
                     
-                    函数 Local 作用域中的特殊变量
+                    作用域和闭包
             
                 </span>
             
@@ -419,7 +419,7 @@
                 <span>
             
                     
-                    原型继承
+                    闭包与内存
             
                 </span>
             
@@ -428,32 +428,6 @@
         </li>
     
         <li class="chapter " data-level="1.4.7" >
-            
-                <span>
-            
-                    
-                    构造函数
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.8" >
-            
-                <span>
-            
-                    
-                    安全的类型检测
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.9" >
             
                 <span>
             
@@ -1444,20 +1418,6 @@
 <li>b. &#x4F7F;&#x7528;<code>switch</code>&#x8BED;&#x53E5;&#x5B8C;&#x6210;&#x4E0A;&#x8FF0;&#x8981;&#x6C42;&#x3002;</li>
 </ul>
 </li>
-<li><p>&#x6709;&#x5927;&#x5C0F;&#x4E0D;&#x7B49;&#x7684;<code>num1</code> <code>num2</code> <code>num3</code>&#x4E09;&#x4E2A;&#x6570;&#x5B57;&#x548C;&#x4E00;&#x4E2A;<code>result</code>&#x6570;&#x7EC4;&#xFF0C;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x8BA9;&#x65E0;&#x8BBA;<code>num1</code> <code>num2</code> <code>num3</code>&#x53D6;&#x4F55;&#x6570;&#x5B57;&#xFF08;&#x4F46;&#x5F7C;&#x6B64;&#x4E0D;&#x80FD;&#x76F8;&#x7B49;&#xFF09;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x80FD;&#x6309;&#x7167;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x7684;&#x987A;&#x5E8F;&#x4F5C;&#x4E3A;&#x6570;&#x7EC4;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code> &#x5047;&#x8BBE;&#x4E00;&#x5F00;&#x59CB; num1 = 23&#x3001;num2 = 888&#x3001;num3 = 2&#x3001;result = [] &#x5373;&#xFF1A;
- var num1 = 23, 
-     num2 = 888, 
-     num3 = 2,
-     result = [];
-
- &#x7ECF;&#x8FC7;&#x300C;&#x4F60;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x300D;&#x540E;...
-
- console.log(result); // [2, 23, 888]&#xFF0C;&#x5C31;&#x662F; result &#x6210;&#x5458;&#x4E3A; [num3, num1, num2]
-
- &#x6CE8;&#x610F;&#xFF0C;&#x65E0;&#x8BBA; num1 &#x3001;num2 &#x3001;num3 &#x53D6;&#x4F55;&#x503C;&#xFF0C;&#x7ECF;&#x8FC7;&#x300C;&#x4F60;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x300D;&#x540E;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x80FD;&#x6309;&#x7167;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x7684;&#x987A;&#x5E8F;&#x6210;&#x4E3A; result &#x7684;&#x6210;&#x5458;
-</code></pre></li>
-<li>&#x5C06;&#x4E0A;&#x4E00;&#x9898;&#x7684;&#x987A;&#x5E8F;&#x6539;&#x4E3A;&#x4ECE;&#x5927;&#x5230;&#x5C0F;&#x6392;&#x5217;&#x3002;</li>
 <li><p>&#x7528;&#x6237;&#x7B49;&#x7EA7;&#xFF0C;&#x4E00;&#x4E2A;&#x7535;&#x5546;&#x7F51;&#x7AD9;&#x9700;&#x8981;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x5E74;&#x6D88;&#x8D39;&#x989D;&#x7ED9;&#x7528;&#x6237;&#x5212;&#x5206; vip &#x7B49;&#x7EA7;&#xFF0C;&#x989D;&#x5EA6;&#x548C;&#x7B49;&#x7EA7;&#x7684;&#x5BF9;&#x5E94;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;&#x8868;&#x3002;</p>
 <table>
  <thead>
@@ -1489,6 +1449,20 @@
 </li>
 <li><p>&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x5224;&#x65AD;&#x53D8;&#x91CF;<code>num</code>&#x662F;&#x5947;&#x6570;&#x8FD8;&#x662F;&#x5076;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5947;&#x6570;&#x7ED9;&#x53D8;&#x91CF;<code>result</code>&#x8D4B;&#x503C;&#x4E3A;<code>&apos;odd&apos;</code>&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5076;&#x6570;&#x7ED9;&#x53D8;&#x91CF;<code>result</code>&#x8D4B;&#x503C;&#x4E3A;<code>&apos;even&apos;</code>&#xFF0C;&#x63D0;&#x793A;&#xFF1A;&#x5224;&#x65AD;&#x5947;&#x5076;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53D6;&#x6A21;&#x8FD0;&#x7B97;&#x3002;</p>
 </li>
+<li><p>&#x6709;&#x5927;&#x5C0F;&#x4E0D;&#x7B49;&#x7684;<code>num1</code> <code>num2</code> <code>num3</code>&#x4E09;&#x4E2A;&#x6570;&#x5B57;&#x548C;&#x4E00;&#x4E2A;<code>result</code>&#x6570;&#x7EC4;&#xFF0C;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x8BA9;&#x65E0;&#x8BBA;<code>num1</code> <code>num2</code> <code>num3</code>&#x53D6;&#x4F55;&#x6570;&#x5B57;&#xFF08;&#x4F46;&#x5F7C;&#x6B64;&#x4E0D;&#x80FD;&#x76F8;&#x7B49;&#xFF09;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x80FD;&#x6309;&#x7167;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x7684;&#x987A;&#x5E8F;&#x4F5C;&#x4E3A;&#x6570;&#x7EC4;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code> &#x5047;&#x8BBE;&#x4E00;&#x5F00;&#x59CB; num1 = 23&#x3001;num2 = 888&#x3001;num3 = 2&#x3001;result = [] &#x5373;&#xFF1A;
+ var num1 = 23, 
+     num2 = 888, 
+     num3 = 2,
+     result = [];
+
+ &#x7ECF;&#x8FC7;&#x300C;&#x4F60;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x300D;&#x540E;...
+
+ console.log(result); // [2, 23, 888]&#xFF0C;&#x5C31;&#x662F; result &#x6210;&#x5458;&#x4E3A; [num3, num1, num2]
+
+ &#x6CE8;&#x610F;&#xFF0C;&#x65E0;&#x8BBA; num1 &#x3001;num2 &#x3001;num3 &#x53D6;&#x4F55;&#x503C;&#xFF0C;&#x7ECF;&#x8FC7;&#x300C;&#x4F60;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x300D;&#x540E;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x80FD;&#x6309;&#x7167;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x7684;&#x987A;&#x5E8F;&#x6210;&#x4E3A; result &#x7684;&#x6210;&#x5458;
+</code></pre></li>
+<li>&#x5C06;&#x4E0A;&#x4E00;&#x9898;&#x7684;&#x987A;&#x5E8F;&#x6539;&#x4E3A;&#x4ECE;&#x5927;&#x5230;&#x5C0F;&#x6392;&#x5217;&#x3002;</li>
 </ol>
 
                                 
@@ -1533,7 +1507,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"条件语句","level":"1.2.7","depth":2,"next":{"title":"循环语句","level":"1.2.8","depth":2,"path":"basics/loop.md","ref":"basics/loop.md","articles":[]},"previous":{"title":"对象","level":"1.2.6","depth":2,"path":"basics/object.md","ref":"basics/object.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","-prism","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"serif","size":2},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 入门教程","language":"zh","gitbook":"*","description":"正在加紧创作..."},"file":{"path":"basics/condition.md","mtime":"2017-03-06T14:13:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T14:16:02.744Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"条件语句","level":"1.2.7","depth":2,"next":{"title":"循环语句","level":"1.2.8","depth":2,"path":"basics/loop.md","ref":"basics/loop.md","articles":[]},"previous":{"title":"对象","level":"1.2.6","depth":2,"path":"basics/object.md","ref":"basics/object.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","-prism","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"serif","size":2},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 入门教程","language":"zh","gitbook":"*","description":"正在加紧创作..."},"file":{"path":"basics/condition.md","mtime":"2017-03-07T14:22:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-07T15:18:33.124Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
