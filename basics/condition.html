@@ -296,7 +296,7 @@
                 <span>
             
                     
-                    批量生产对象的需求
+                    创建对象
             
                 </span>
             
@@ -309,7 +309,7 @@
                 <span>
             
                     
-                    构造函数和对象
+                    构造函数和原型
             
                 </span>
             
@@ -322,7 +322,7 @@
                 <span>
             
                     
-                    JavaScript 内建的构造函数
+                    继承
             
                 </span>
             
@@ -335,7 +335,20 @@
                 <span>
             
                     
-                    原型继承
+                    属性描述符
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" >
+            
+                <span>
+            
+                    
+                    内置对象
             
                 </span>
             
@@ -770,8 +783,8 @@
 <p>&#x4EE3;&#x7801;&#x5757;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x58F0;&#x660E;&#x90FD;&#x662F;&#x4F7F;&#x7528;<code>{}</code>&#x5305;&#x88F9;&#x7740;&#x76F8;&#x5173;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</span>
 <span class="hljs-keyword">var</span> user = {
-  age: <span class="hljs-number">20</span>,
-  gender: <span class="hljs-string">&apos;male&apos;</span>
+  <span class="hljs-attr">age</span>: <span class="hljs-number">20</span>,
+  <span class="hljs-attr">gender</span>: <span class="hljs-string">&apos;male&apos;</span>
 };
 
 <span class="hljs-comment">// if &#x8BED;&#x53E5;&#x540E;&#x8FB9;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;</span>
@@ -784,8 +797,8 @@
 <p>&#x533A;&#x5206;&#x5B83;&#x4EEC;&#x7684;&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#xFF0C;&#x58F0;&#x660E;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x5F62;&#x5982;<code>&#x5C5E;&#x6027;&#x540D;: &#x5C5E;&#x6027;&#x503C;,</code>&#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x4EE3;&#x7801;&#x5757;&#x662F;&#x4EFB;&#x610F;&#x4EE3;&#x7801;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5199;&#x6CD5;&#x662F;&#x56FA;&#x5B9A;&#x7684; &#x5C5E;&#x6027;&#x540D;: &#x5C5E;&#x6027;&#x503C;</span>
 <span class="hljs-keyword">var</span> coconut = {
-  name: <span class="hljs-string">&apos;&#x6930;&#x5B50;&apos;</span>,
-  color: <span class="hljs-string">&apos;&#x68D5;&#x8272;&apos;</span>
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;&#x6930;&#x5B50;&apos;</span>,
+  <span class="hljs-attr">color</span>: <span class="hljs-string">&apos;&#x68D5;&#x8272;&apos;</span>
 }
 
 
@@ -793,8 +806,8 @@
 {
 
   <span class="hljs-keyword">var</span> user = {
-    age: <span class="hljs-number">20</span>,
-    gender: <span class="hljs-string">&apos;male&apos;</span>
+    <span class="hljs-attr">age</span>: <span class="hljs-number">20</span>,
+    <span class="hljs-attr">gender</span>: <span class="hljs-string">&apos;male&apos;</span>
   };
   <span class="hljs-keyword">var</span> namelist = [<span class="hljs-string">&apos;&#x5C0F;&#x7EA2;&apos;</span>, <span class="hljs-string">&apos;&#x5C0F;&#x7EFF;&apos;</span>, <span class="hljs-string">&apos;&#x5C0F;&#x84DD;&apos;</span>];
 
@@ -820,13 +833,13 @@
 
 <span class="hljs-comment">// &#x5BF9;&#x8C61;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x4E0D;&#x5C31;&#x662F;&#x5728; = &#x64CD;&#x4F5C;&#x7B26;&#x53F3;&#x8FB9;&#x4E48;</span>
 <span class="hljs-keyword">var</span> c = {
-  name: <span class="hljs-string">&apos;123&apos;</span>
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;123&apos;</span>
 };
 </code></pre>
 <p>&#x5F53;<code>{...}</code>&#x88AB;&#x62EC;&#x53F7;<code>()</code>&#x5305;&#x88F9;&#x7684;&#x65F6;&#x5019;&#xFF0C; JavaScript &#x628A;&#x5B83;&#x5F53;&#x4F5C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-javascript">({ <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>; }); <span class="hljs-comment">// &#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#xFF0C;&#x56E0;&#x4E3A;  JavaScript &#x5C06;&#x62EC;&#x53F7;&#x4E2D;&#x7684; {} &#x5F53;&#x4F5C;&#x4E86;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</span>
 
-({a: <span class="hljs-string">&apos;123&apos;</span>}); <span class="hljs-comment">// &#x6CA1;&#x6709;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;</span>
+({<span class="hljs-attr">a</span>: <span class="hljs-string">&apos;123&apos;</span>}); <span class="hljs-comment">// &#x6CA1;&#x6709;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;</span>
 </code></pre>
 <h2 id="&#x590D;&#x5408;-if-&#x8BED;&#x53E5;">&#x590D;&#x5408; if &#x8BED;&#x53E5;</h2>
 <h3 id="ifelse-&#x8BED;&#x53E5;"><code>if...else...</code> &#x8BED;&#x53E5;</h3>
@@ -844,8 +857,8 @@
 <p>&#x4E0B;&#x5217;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x4E86; JavaScript &#x7684;<code>if...else...</code>&#x8BED;&#x53E5;&#x63CF;&#x8FF0;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x903B;&#x8F91;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// &#x63CF;&#x8FF0;&#x7528;&#x6237;&#x7684;&#x5BF9;&#x8C61;</span>
 <span class="hljs-keyword">var</span> user = {
-  age: <span class="hljs-number">20</span>,
-  gender: <span class="hljs-string">&apos;male&apos;</span>
+  <span class="hljs-attr">age</span>: <span class="hljs-number">20</span>,
+  <span class="hljs-attr">gender</span>: <span class="hljs-string">&apos;male&apos;</span>
 };
 
 <span class="hljs-comment">// &#x5982;&#x679C;&#x7528;&#x6237;&#x7684;&#x5E74;&#x9F84;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#x5341;&#x516B;&#x5C81;&#x5219;&#x663E;&#x793A;&#x6B22;&#x8FCE;&#x8BCD;&#xFF0C;&#x5426;&#x5219;&#x7ED9;&#x51FA;&#x8B66;&#x544A;&#x3002;</span>
@@ -866,8 +879,8 @@
 <p>&#x6253;&#x5370;&#x4E24;&#x4E2A;&#x76F8;&#x540C;&#x7684;&#x6B22;&#x8FCE;&#x8BCD;&#x80AF;&#x5B9A;&#x662F;&#x6709;&#x70B9;&#x591A;&#x4F59;&#x7684;&#xFF0C;&#x4E3A;&#x4E86;&#x8282;&#x7EA6;&#x7528;&#x6237;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x6211;&#x4EEC;&#x5229;&#x7528;&#x4EE3;&#x7801;&#x5757;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EE3;&#x7801;&#x5757;&#x7684;&#x8BBE;&#x5B9A;&#xFF0C;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x7EC4;&#x5408;&#x4FE9;&#x4E2A;<code>if...else...</code>&#x8BED;&#x53E5;&#x4F7F;&#x5F97;&#x903B;&#x8F91;&#x66F4;&#x7CBE;&#x7B80;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// &#x63CF;&#x8FF0;&#x7528;&#x6237;&#x7684;&#x5BF9;&#x8C61;</span>
 <span class="hljs-keyword">var</span> user = {
-  age: <span class="hljs-number">20</span>,
-  gender: <span class="hljs-string">&apos;male&apos;</span>
+  <span class="hljs-attr">age</span>: <span class="hljs-number">20</span>,
+  <span class="hljs-attr">gender</span>: <span class="hljs-string">&apos;male&apos;</span>
 };
 
 <span class="hljs-comment">// &#x5982;&#x679C;&#x7528;&#x6237;&#x7684;&#x5E74;&#x9F84;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#x5341;&#x516B;&#x5C81;&#x5219;&#x8FDB;&#x4E00;&#x6B65;&#x5224;&#x65AD;&#x6027;&#x522B;&#xFF0C;&#x5426;&#x5219;&#x7ED9;&#x51FA;&#x8B66;&#x544A;&#x3002;</span>
@@ -1097,7 +1110,7 @@
 
 <span class="hljs-comment">// case &#x6709;&#x96F6;&#x4E2A;</span>
 <span class="hljs-keyword">switch</span> (title) {
-  <span class="hljs-keyword">default</span>:
+  <span class="hljs-attr">default</span>:
     greeting = <span class="hljs-string">&apos;&#x4F60;&#x597D;&apos;</span>;
 }
 <span class="hljs-built_in">console</span>.log(greeting); <span class="hljs-comment">// &apos;&#x4F60;&#x597D;&apos;</span>
@@ -1240,12 +1253,12 @@
 </li>
 <li><p>&#x9605;&#x8BFB;&#x4E0B;&#x5217;&#x4EE3;&#x7801;&#xFF0C;&#x7ED9;&#x51FA;&#x53D8;&#x91CF;<code>a~f</code>&#x7684;&#x503C;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> userInfo = {
-   email: <span class="hljs-string">&apos;123456@qwert.com&apos;</span>,
-   cellphone: <span class="hljs-string">&apos;12345678901&apos;</span>,
-   nicename: <span class="hljs-string">&apos;&#x840C;&#x5C0F;&#x7EFF;&apos;</span>,
-   age: <span class="hljs-number">5</span>,
-   gender: <span class="hljs-string">&apos;female&apos;</span>,
-   hobbies: [<span class="hljs-string">&apos;&#x8DB4;&#x7A97;&#x53F0;&apos;</span>, <span class="hljs-string">&apos;&#x6652;&#x592A;&#x9633;&apos;</span>, <span class="hljs-string">&apos;&#x73A9;&#x6BDB;&#x7EBF;&#x7403;&apos;</span>, <span class="hljs-string">&apos;&#x5403;&#x5C0F;&#x9C7C;&#x5E72;&apos;</span>]
+   <span class="hljs-attr">email</span>: <span class="hljs-string">&apos;123456@qwert.com&apos;</span>,
+   <span class="hljs-attr">cellphone</span>: <span class="hljs-string">&apos;12345678901&apos;</span>,
+   <span class="hljs-attr">nicename</span>: <span class="hljs-string">&apos;&#x840C;&#x5C0F;&#x7EFF;&apos;</span>,
+   <span class="hljs-attr">age</span>: <span class="hljs-number">5</span>,
+   <span class="hljs-attr">gender</span>: <span class="hljs-string">&apos;female&apos;</span>,
+   <span class="hljs-attr">hobbies</span>: [<span class="hljs-string">&apos;&#x8DB4;&#x7A97;&#x53F0;&apos;</span>, <span class="hljs-string">&apos;&#x6652;&#x592A;&#x9633;&apos;</span>, <span class="hljs-string">&apos;&#x73A9;&#x6BDB;&#x7EBF;&#x7403;&apos;</span>, <span class="hljs-string">&apos;&#x5403;&#x5C0F;&#x9C7C;&#x5E72;&apos;</span>]
 };
 
 <span class="hljs-keyword">var</span> a = <span class="hljs-number">0</span>;
@@ -1307,7 +1320,7 @@
 <pre><code class="lang-javascript">{
    {
      {
-       {<span class="hljs-keyword">var</span> cat = {name: <span class="hljs-string">&apos;Yoyo&apos;</span>};}
+       {<span class="hljs-keyword">var</span> cat = {<span class="hljs-attr">name</span>: <span class="hljs-string">&apos;Yoyo&apos;</span>};}
      }
    }
 }
@@ -1317,12 +1330,12 @@
 </li>
 <li><p>&#x9605;&#x8BFB;&#x4E0B;&#x5217;&#x4EE3;&#x7801;&#xFF0C;&#x6307;&#x51FA;<code>#1~#12</code>&#x5404;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x54EA;&#x91CC;&#x88AB;&#x8FD0;&#x884C;&#x4E86;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> commodity = {
-   type: <span class="hljs-string">&apos;&#x6D17;&#x53D1;&#x6C34;&apos;</span>,
-   brand: <span class="hljs-string">&apos;&#x98D8;&#x786C;&apos;</span>,
-   prices: {
-     large: <span class="hljs-number">4.99</span>,
-     medium: <span class="hljs-number">3.99</span>,
-     small: <span class="hljs-number">2.99</span>
+   <span class="hljs-attr">type</span>: <span class="hljs-string">&apos;&#x6D17;&#x53D1;&#x6C34;&apos;</span>,
+   <span class="hljs-attr">brand</span>: <span class="hljs-string">&apos;&#x98D8;&#x786C;&apos;</span>,
+   <span class="hljs-attr">prices</span>: {
+     <span class="hljs-attr">large</span>: <span class="hljs-number">4.99</span>,
+     <span class="hljs-attr">medium</span>: <span class="hljs-number">3.99</span>,
+     <span class="hljs-attr">small</span>: <span class="hljs-number">2.99</span>
    }
 };
 
@@ -1365,15 +1378,15 @@
 </li>
 <li><p>&#x9605;&#x8BFB;&#x4E0B;&#x5217;&#x4EE3;&#x7801;&#xFF0C;&#x6307;&#x51FA;<code>#1~#10</code>&#x54EA;&#x5904;&#x88AB;&#x8FD0;&#x884C;&#x4E86;&#xFF0C;&#x54EA;&#x5904;&#x6CA1;&#x88AB;&#x8FD0;&#x884C;&#x3002;</p>
 <pre><code class="lang-javascript"> <span class="hljs-keyword">var</span> book = {
-   title: <span class="hljs-string">&apos;&#x53CC;&#x57CE;&#x8BB0;&apos;</span>,
-   author: <span class="hljs-string">&apos;&#x67E5;&#x5C14;&#x65AF;&#xB7;&#x72C4;&#x66F4;&#x65AF;&apos;</span>,
-   years: <span class="hljs-number">1859</span>,
-   prices: {
-     paperback: <span class="hljs-number">20</span>,
-     hardcover: <span class="hljs-number">35</span>,
-     classical: <span class="hljs-number">99</span>
+   <span class="hljs-attr">title</span>: <span class="hljs-string">&apos;&#x53CC;&#x57CE;&#x8BB0;&apos;</span>,
+   <span class="hljs-attr">author</span>: <span class="hljs-string">&apos;&#x67E5;&#x5C14;&#x65AF;&#xB7;&#x72C4;&#x66F4;&#x65AF;&apos;</span>,
+   <span class="hljs-attr">years</span>: <span class="hljs-number">1859</span>,
+   <span class="hljs-attr">prices</span>: {
+     <span class="hljs-attr">paperback</span>: <span class="hljs-number">20</span>,
+     <span class="hljs-attr">hardcover</span>: <span class="hljs-number">35</span>,
+     <span class="hljs-attr">classical</span>: <span class="hljs-number">99</span>
    },
-   tabs: [<span class="hljs-string">&apos;&#x5C0F;&#x8BF4;&apos;</span>, <span class="hljs-string">&apos;&#x82F1;&#x56FD;&apos;</span>, <span class="hljs-string">&apos;&#x897F;&#x65B9;&#x6587;&#x5B66;&apos;</span>]
+   <span class="hljs-attr">tabs</span>: [<span class="hljs-string">&apos;&#x5C0F;&#x8BF4;&apos;</span>, <span class="hljs-string">&apos;&#x82F1;&#x56FD;&apos;</span>, <span class="hljs-string">&apos;&#x897F;&#x65B9;&#x6587;&#x5B66;&apos;</span>]
  }
 
  <span class="hljs-keyword">switch</span>(book.title) {
@@ -1460,8 +1473,8 @@
 </li>
 <li><p>&#x6709;&#x5982;&#x4E0B;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#xFF0C;&#x6309;&#x7167;&#x8981;&#x6C42;&#x5199;&#x51FA;&#x76F8;&#x5E94;&#x4EE3;&#x7801;&#x3002;</p>
 <pre><code class="lang-javascript"> <span class="hljs-keyword">var</span> user = {
-   name: <span class="hljs-string">&apos;&#x82B1;&#x82B1;&apos;</span>,
-   gender: <span class="hljs-string">&apos;female&apos;</span>
+   <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;&#x82B1;&#x82B1;&apos;</span>,
+   <span class="hljs-attr">gender</span>: <span class="hljs-string">&apos;female&apos;</span>
  },
  greeting;
 </code></pre>
@@ -1559,7 +1572,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"条件语句","level":"1.2.7","depth":2,"next":{"title":"循环语句","level":"1.2.8","depth":2,"path":"basics/loop.md","ref":"basics/loop.md","articles":[]},"previous":{"title":"对象","level":"1.2.6","depth":2,"path":"basics/object.md","ref":"basics/object.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","-prism","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"serif","size":2},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 入门教程","language":"zh","gitbook":"*","description":"正在加紧创作..."},"file":{"path":"basics/condition.md","mtime":"2017-03-07T14:22:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-23T15:06:59.590Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"条件语句","level":"1.2.7","depth":2,"next":{"title":"循环语句","level":"1.2.8","depth":2,"path":"basics/loop.md","ref":"basics/loop.md","articles":[]},"previous":{"title":"对象","level":"1.2.6","depth":2,"path":"basics/object.md","ref":"basics/object.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","-prism","highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"serif","size":2},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 入门教程","language":"zh","gitbook":"*","description":"正在加紧创作..."},"file":{"path":"basics/condition.md","mtime":"2017-03-24T08:37:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-25T15:28:46.907Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
