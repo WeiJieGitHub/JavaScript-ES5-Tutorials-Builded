@@ -630,7 +630,22 @@
 <pre><code>while(&#x6761;&#x4EF6;) {
   &#x5FAA;&#x73AF;&#x4F53;
 }
-</code></pre><p>&#x4E0A;&#x8FB9;&#x4F2A;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x548C;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x4E00;&#x81F4;&#xFF0C;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x53EB;&#x505A;<strong>&#x5FAA;&#x73AF;&#x4F53;</strong>&#xFF0C;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EFB;&#x610F;&#x7684;&#x4EE3;&#x7801;&#x3002;<code>while</code>&#x8BED;&#x53E5;&#x5148;&#x5BF9;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x5982;&#x679C;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#x5047;&#xFF0C;&#x4E0D;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#x771F;&#xFF0C;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF1B;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x518D;&#x6B21;&#x5224;&#x65AD;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x771F;&#x5047;&#xFF0C;&#x4E3A;&#x771F;&#x5C31;&#x518D;&#x6B21;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E3A;&#x5047;&#x5C31;&#x4E0D;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x6B64;&#x5F80;&#x590D;&#x3002;</p>
+</code></pre><p>&#x4E0A;&#x8FB9;&#x4F2A;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x548C;&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x4E00;&#x81F4;&#xFF0C;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x53EB;&#x505A;<strong>&#x5FAA;&#x73AF;&#x4F53;</strong>&#xFF0C;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EFB;&#x610F;&#x7684;&#x4EE3;&#x7801;&#x3002;<code>while</code>&#x8BED;&#x53E5;&#x5148;&#x5BF9;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x5982;&#x679C;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#x5047;&#xFF0C;&#x4E0D;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#x771F;&#xFF0C;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF1B;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x518D;&#x6B21;&#x5224;&#x65AD;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x771F;&#x5047;&#xFF0C;&#x4E3A;&#x771F;&#x5C31;&#x518D;&#x6B21;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E3A;&#x5047;&#x5C31;&#x4E0D;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x6B64;&#x5F80;&#x590D;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<div class="mermaid">
+graph LR
+  S((&#x5F00;&#x59CB;))
+  E((&#x7ED3;&#x675F;))
+
+  B1[&#x5FAA;&#x73AF;&#x4F53;]
+
+  C1{&#x6761;&#x4EF6;}
+
+  S --&gt; C1
+  C1 --&#x4E3A;&#x771F;--&gt; B1
+  C1 --&#x4E3A;&#x5047;--&gt; E
+  B1 --&gt; C1
+</div>
+
 <p>&#x5728; JavaScript &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x4F7F;&#x7528;<code>while</code>&#x8BED;&#x53E5;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x5217;&#x4EE3;&#x7801;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;<code>1~10</code>&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>;
 <span class="hljs-keyword">while</span>(i &lt;= <span class="hljs-number">10</span>) {
@@ -644,11 +659,42 @@
 <li>&#x5224;&#x65AD;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x771F;&#x5047;&#xFF0C;&#x5982;&#x679C; <code>i &lt;= 10</code> &#x4E3A;<code>true</code> &#x5C31;&#x6267;&#x884C;&#x6B65;&#x9AA4; 2 3 4&#xFF0C;&#x4E3A;<code>false</code>&#x5C31;&#x4E0D;&#x6267;&#x884C;</li>
 <li>&#x6267;&#x884C;<code>console.log(i)</code></li>
 <li>&#x6267;&#x884C;<code>i++</code>&#xFF08;&#x6CE8;&#x610F;&#xFF1A;<code>i</code>&#x7684;&#x589E;&#x957F;&#x8FDF;&#x65E9;&#x4F1A;&#x8BA9;<code>i &lt;= 10</code>&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;<code>false</code>&#x4EE5;&#x7ED3;&#x675F;&#x6389;&#x5FAA;&#x73AF;&#xFF09;</li>
-<li>&#x56DE;&#x5230;&#x6B65;&#x9AA4; 1</li>
+<li>&#x56DE;&#x5230;&#x6B65;&#x9AA4; 1
+&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</li>
 </ol>
 </blockquote>
+<div class="mermaid">
+graph LR
+
+  S((&#x5F00;&#x59CB;))
+  E((&#x7ED3;&#x675F;))
+  B1[console.log]
+  B2[i++]
+  C1{i&lt;=10}
+
+  S --&gt; C1
+  C1 --true--&gt; B1
+  C1 --false--&gt; E
+  B1 --&gt; B2
+  B2 --&gt; C1
+</div>
+
 <h3 id="&#x6B7B;&#x5FAA;&#x73AF;">&#x6B7B;&#x5FAA;&#x73AF;</h3>
-<p>&#x6709;&#x8FD9;&#x4E48;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x7ED3;&#x679C;&#x4E00;&#x76F4;&#x4E3A;&#x771F;&#xFF0C;&#x90A3;&#x4E48;&#x7A0B;&#x5E8F;&#x5C31;&#x4F1A;&#x6C38;&#x65E0;&#x4F11;&#x6B62;&#x7684;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x79CD;&#x5FAA;&#x73AF;&#x53EB;<strong>&#x6B7B;&#x5FAA;&#x73AF;</strong>&#x3002;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6B7B;&#x5FAA;&#x73AF;&#x4F1A;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x5361;&#x6B7B;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x6C38;&#x65E0;&#x4F11;&#x6B62;&#x7684;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;<code>1</code>&#xFF1A;</p>
+<p>&#x6709;&#x8FD9;&#x4E48;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x7ED3;&#x679C;&#x4E00;&#x76F4;&#x4E3A;&#x771F;&#xFF0C;&#x90A3;&#x4E48;&#x7A0B;&#x5E8F;&#x5C31;&#x4F1A;&#x6C38;&#x65E0;&#x4F11;&#x6B62;&#x7684;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x79CD;&#x5FAA;&#x73AF;&#x53EB;<strong>&#x6B7B;&#x5FAA;&#x73AF;</strong>&#x3002;</p>
+<div class="mermaid">
+graph LR
+  S((&#x5F00;&#x59CB;))
+
+  B1[&#x5FAA;&#x73AF;&#x4F53;]
+
+  C1{&#x6761;&#x4EF6;}
+
+  S --&gt; C1
+  C1 --&#x4E3A;&#x771F;--&gt; B1
+  B1 --&gt; C1
+</div>
+
+<p>&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6B7B;&#x5FAA;&#x73AF;&#x4F1A;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x5361;&#x6B7B;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x6C38;&#x65E0;&#x4F11;&#x6B62;&#x7684;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;<code>1</code>&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>;
 <span class="hljs-keyword">while</span>(i &lt;= <span class="hljs-number">10</span>) {
   <span class="hljs-built_in">console</span>.log(i);
@@ -676,6 +722,28 @@
 <blockquote>
 <p>&#x5F53;<code>#1</code>&#x5904;&#x7684;<code>break</code>&#x88AB;&#x6267;&#x884C;&#x540E;&#x7A0B;&#x5E8F;&#x4F1A;&#x76F4;&#x63A5;&#x8DF3;&#x8F6C;&#x5230;<code>#2</code>&#x5904;&#x3002;</p>
 </blockquote>
+<div class="mermaid">
+graph TB
+
+  S((&#x5F00;&#x59CB;))
+  E((&#x7ED3;&#x675F;))
+  B1[console.log]
+  B2[i++]
+  B3[break]
+  C1{i&lt;=10}
+  C2{&quot;i===5&quot;}
+
+  S --&gt; C1
+  C1 --true--&gt; C2
+  C2 --true--&gt; B3
+  B3 --&gt; E
+
+  C2 -- false--&gt; B1
+  C1 --false--&gt; E
+  B1 --&gt; B2
+  B2 --&gt; C1
+</div>
+
 <h3 id="continue-&#x8BED;&#x53E5;&#x5728;&#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x4F7F;&#x7528;">continue &#x8BED;&#x53E5;&#x5728;&#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x4F7F;&#x7528;</h3>
 <p>&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x88AB;&#x4E00;&#x8F6E;&#x53C8;&#x4E00;&#x8F6E;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x6709;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x7ED3;&#x675F;&#x8FD9;&#x4E00;&#x8F6E;&#x5FAA;&#x73AF;&#xFF0C;&#x63D0;&#x524D;&#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x8F6E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>continue</code>&#x8BED;&#x53E5;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x8FB9;&#x7684;&#x4EE3;&#x7801;&#x5728;<code>i</code>&#x7684;&#x503C;&#x4E3A;<code>3</code> <code>5</code> <code>7</code>&#x7684;&#x65F6;&#x5019;&#x63D0;&#x524D;&#x7ED3;&#x675F;&#x4E86;&#x5F53;&#x524D;&#x8F6E;&#x5FAA;&#x73AF;&#xFF0C;&#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x8F6E;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>;
@@ -694,13 +762,51 @@
 <p>&#x5F53;<code>#1</code>&#x5904;&#x7684;<code>continue</code>&#x88AB;&#x6267;&#x884C;&#x540E;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x8DF3;&#x8F6C;&#x5230;<code>#2</code>&#x5904;&#x91CD;&#x65B0;&#x5224;&#x65AD;<code>i &lt;= 10</code>&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;
 &#x5982;&#x679C;&#x4E3A;<code>true</code>&#x5219;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x4E3A;<code>false</code>&#x5219;&#x4E0D;&#x6267;&#x884C;&#x3002;</p>
 </blockquote>
+<div class="mermaid">
+graph TB
+
+  S((&#x5F00;&#x59CB;))
+  E((&#x7ED3;&#x675F;))
+  B1[console.log]
+  B2[i++]
+  B3[continue]
+  C1{i&lt;=10}
+  C2{&quot;i===3 || i===5 || i===7&quot;}
+
+  S --&gt; C1
+  C1 --true--&gt; C2
+  C2 --true--&gt; B3
+  B3 --&gt; C1
+
+  C2 -- false--&gt; B1
+  C1 --false--&gt; E
+  B1 --&gt; B2
+  B2 --&gt; C1
+</div>
+
 <h2 id="dowhile-&#x8BED;&#x53E5;">do...while &#x8BED;&#x53E5;</h2>
 <h3 id="dowhile-&#x8BED;&#x53E5;&#x7684;&#x4F7F;&#x7528;">do...while &#x8BED;&#x53E5;&#x7684;&#x4F7F;&#x7528;</h3>
 <p><code>do...while</code>&#x8BED;&#x53E5;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#x4F2A;&#x4EE3;&#x7801;&#x63CF;&#x8FF0;&#xFF1A;</p>
 <pre><code>do {
   &#x5FAA;&#x73AF;&#x4F53;
 } while(&#x6761;&#x4EF6;);
-</code></pre><p><code>do...while</code>&#x8BED;&#x53E5;&#x9996;&#x5148;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x7136;&#x540E;&#x5224;&#x65AD;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x7ED3;&#x679C;&#x4E3A;&#x771F;&#x5C31;&#x518D;&#x6B21;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x7ED3;&#x679C;&#x4E3A;&#x5047;&#x8BED;&#x53E5;&#x5C31;&#x7ED3;&#x675F;&#xFF0C;&#x5982;&#x6B64;&#x5F80;&#x590D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x5217;&#x4EE3;&#x7801;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x4E2D;&#x8F93;&#x51FA;<code>1~10</code>&#xFF1A;</p>
+</code></pre><p><code>do...while</code>&#x8BED;&#x53E5;&#x9996;&#x5148;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x7136;&#x540E;&#x5224;&#x65AD;&#x300C;&#x6761;&#x4EF6;&#x300D;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x7ED3;&#x679C;&#x4E3A;&#x771F;&#x5C31;&#x518D;&#x6B21;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x7ED3;&#x679C;&#x4E3A;&#x5047;&#x8BED;&#x53E5;&#x5C31;&#x7ED3;&#x675F;&#xFF0C;&#x5982;&#x6B64;&#x5F80;&#x590D;&#x3002;</p>
+<div class="mermaid">
+graph LR
+  S((&#x5F00;&#x59CB;))
+  E((&#x7ED3;&#x675F;))
+
+  B1[&#x5FAA;&#x73AF;&#x4F53;]
+
+  C1{&#x6761;&#x4EF6;}
+
+  S --&gt; B1
+  B1 --&gt; C1
+  C1 --&#x4E3A;&#x5047;--&gt; E
+  C1 --&#x4E3A;&#x771F;--&gt; B1
+</div>
+
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x5217;&#x4EE3;&#x7801;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x4E2D;&#x8F93;&#x51FA;<code>1~10</code>&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>;
 <span class="hljs-keyword">do</span> {
   <span class="hljs-built_in">console</span>.log(i);
@@ -716,7 +822,35 @@
 </ol>
 </blockquote>
 <h3 id="dowhile-&#x8BED;&#x53E5;&#x548C;-while-&#x8BED;&#x53E5;&#x7684;&#x533A;&#x522B;">do...while &#x8BED;&#x53E5;&#x548C; while &#x8BED;&#x53E5;&#x7684;&#x533A;&#x522B;</h3>
-<p><code>do...while</code>&#x8BED;&#x53E5;&#x548C;<code>while</code>&#x8BED;&#x53E5;&#x957F;&#x5F97;&#x7C7B;&#x4F3C;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5B83;&#x4EEC;&#x7565;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x533A;&#x522B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><code>do...while</code>&#x8BED;&#x53E5;&#x548C;<code>while</code>&#x8BED;&#x53E5;&#x957F;&#x5F97;&#x7C7B;&#x4F3C;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5B83;&#x4EEC;&#x7565;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x4E0B;&#x9762;&#x56FE;&#x7247;&#x4E2D;&#x4E0A;&#x8FB9;&#x662F;<code>do...while</code>&#x7684;&#x6D41;&#x7A0B;&#x56FE;&#xFF0C;&#x4E0B;&#x8FB9;&#x662F;<code>while</code>&#x8BED;&#x53E5;&#x7684;&#x6D41;&#x7A0B;&#x56FE;&#x3002;</p>
+<div class="mermaid">
+graph LR
+  S((&#x5F00;&#x59CB;))
+  E((&#x7ED3;&#x675F;))
+
+  B1[&#x5FAA;&#x73AF;&#x4F53;]
+
+  C1{&#x6761;&#x4EF6;}
+
+  S --&gt; B1
+  B1 --&gt; C1
+  C1 --&#x4E3A;&#x5047;--&gt; E
+  C1 --&#x4E3A;&#x771F;--&gt; B1
+
+  s((&#x5F00;&#x59CB;))
+  e((&#x7ED3;&#x675F;))
+
+  b1[&#x5FAA;&#x73AF;&#x4F53;]
+
+  c1{&#x6761;&#x4EF6;}
+
+  s --&gt; c1
+  c1 --&#x4E3A;&#x771F;--&gt; b1
+  c1 --&#x4E3A;&#x5047;--&gt; e
+  b1 --&gt; c1
+</div>
+
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x8FB9;&#x56FE;&#x7247;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5F97;&#x51FA;&#x6765;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x533A;&#x522B;&#x5982;&#x4E0B;&#xFF1A;</p>
 <ol>
 <li><code>do...while</code>&#x8BED;&#x53E5;&#x5148;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x518D;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6210;&#x7ACB;&#xFF0C;&#x6210;&#x7ACB;&#x5219;&#x518D;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x6210;&#x7ACB;&#x5219;&#x7ED3;&#x675F;&#x3002;</li>
 <li><code>while</code>&#x8BED;&#x53E5;&#x5219;&#x5148;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6210;&#x7ACB;&#xFF0C;&#x6210;&#x7ACB;&#x5219;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x3002;</li>
@@ -789,29 +923,53 @@ while(&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6210;&#x7ACB;) {
 <pre><code>for(&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;; &#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6210;&#x7ACB;; &#x6301;&#x7EED;&#x7684;&#x6539;&#x53D8;&#x6761;&#x4EF6;) {
   &#x5FAA;&#x73AF;&#x4F53;
 }
-</code></pre><p> <code>for</code>&#x8BED;&#x53E5;&#x6267;&#x884C;&#x7684;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
-<ol>
-<li>&#x9996;&#x5148;&#x300C;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x300D;&#x3002;</li>
-<li>&#x7136;&#x540E;&#x300C;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6210;&#x7ACB;&#x300D;&#xFF0C;&#x5982;&#x679C;&#x6210;&#x7ACB;&#xFF0C;&#x5219;&#x6267;&#x884C;&#x6B65;&#x9AA4; 3 4 5&#xFF0C;&#x4E0D;&#x6210;&#x7ACB;&#x5219;&#x8BED;&#x53E5;&#x7ED3;&#x675F;&#x3002;</li>
-<li>&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#x7684;&#x5185;&#x5BB9;</li>
-<li>&#x6267;&#x884C;&#x300C;&#x6301;&#x7EED;&#x7684;&#x6539;&#x53D8;&#x6761;&#x4EF6;&#x300D;&#x3002;</li>
-<li>&#x56DE;&#x5230;&#x6B65;&#x9AA4; 2&#x3002;</li>
-</ol>
+</code></pre><p> <code>for</code>&#x8BED;&#x53E5;&#x6267;&#x884C;&#x7684;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<div class="mermaid">
+graph LR
+  S((&#x5F00;&#x59CB;))
+  E((&#x7ED3;&#x675F;))
+
+  subgraph 
+    B0[&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;]
+    C1{&#x5224;&#x65AD;&#x6761;&#x4EF6;}
+    B1[&#x5FAA;&#x73AF;&#x4F53;]
+    B2[&#x6301;&#x7EED;&#x7684;&#x6539;&#x53D8;&#x6761;&#x4EF6;]
+  end
+  S --&gt; B0
+  B0 --&gt; C1
+  C1 --&#x4E3A;&#x5047;--&gt; E
+  C1 --&#x4E3A;&#x771F;--&gt; B1
+  B1 --&gt; B2
+  B2 --&gt; C1
+</div>
+
 <p>&#x6240;&#x4EE5;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;<code>1~10</code>&#x7684;&#x4F8B;&#x5B50;&#x7528;<code>for</code>&#x8BED;&#x53E5;&#x5199;&#x51FA;&#x6765;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">10</span>; i++) {
   <span class="hljs-built_in">console</span>.log(i);
 }
 </code></pre>
 <blockquote>
-<p>&#x4E0A;&#x8FB9;<code>for</code>&#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;</p>
-<ol>
-<li>&#x9996;&#x5148;&#x6267;&#x884C;<code>var i = 1</code>&#x3002;</li>
-<li>&#x7136;&#x540E;&#x5224;&#x65AD;<code>i &lt;= 10</code>&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x5426;&#x4E3A;<code>true</code>&#xFF0C;&#x4E3A;<code>true</code>&#x5C31;&#x6267;&#x884C;&#x6B65;&#x9AA4; 3 4 5&#xFF0C;&#x5426;&#x5219;&#x8BED;&#x53E5;&#x7ED3;&#x675F;&#x3002;</li>
-<li>&#x6267;&#x884C;<code>console.log(i)</code>&#x3002;</li>
-<li>&#x6267;&#x884C;<code>i++</code>&#x3002;</li>
-<li>&#x56DE;&#x5230;&#x6B65;&#x9AA4; 2</li>
-</ol>
+<p>&#x4E0A;&#x8FB9;<code>for</code>&#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x56FE;</p>
 </blockquote>
+<div class="mermaid">
+graph LR
+  S((&#x5F00;&#x59CB;))
+  E((&#x7ED3;&#x675F;))
+
+  subgraph 
+    B0[var i = 1]
+    C1{i &lt;= 10}
+    B1[console.log]
+    B2[i++]
+  end
+  S --&gt; B0
+  B0 --&gt; C1
+  C1 --false--&gt; E
+  C1 --true--&gt; B1
+  B1 --&gt; B2
+  B2 --&gt; C1
+</div>
+
 <h3 id="&#x4F7F;&#x7528;-for-&#x8BED;&#x53E5;&#x64CD;&#x4F5C;&#x6570;&#x7EC4;">&#x4F7F;&#x7528; for &#x8BED;&#x53E5;&#x64CD;&#x4F5C;&#x6570;&#x7EC4;</h3>
 <h4 id="&#x6570;&#x7EC4;&#x7684;&#x904D;&#x5386;">&#x6570;&#x7EC4;&#x7684;&#x904D;&#x5386;</h4>
 <p>&#x6709;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>for</code>&#x8BED;&#x53E5;&#x4ECE;&#x5934;&#x5230;&#x4F4D;&#x8BBF;&#x95EE;&#x6328;&#x4E2A;&#x8BBF;&#x95EE;&#x6570;&#x7EC4;&#x7684;&#x5404;&#x4E2A;&#x6210;&#x5458;&#xFF0C;&#x8FD9;&#x79CD;&#x64CD;&#x4F5C;&#x53EB;&#x505A;<strong>&#x6570;&#x7EC4;&#x7684;&#x904D;&#x5386;</strong>&#x3002;&#x4F8B;&#x5982;&#x4E0B;&#x5217;&#x7684;&#x4EE3;&#x7801;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x4E0A;&#x6328;&#x4E2A;&#x8F93;&#x51FA;&#x4E86;&#x6570;&#x7EC4;<code>users</code>&#x7684;&#x5168;&#x90E8;&#x6210;&#x5458;&#xFF1A;</p>
@@ -1122,7 +1280,7 @@ console.log(result); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"循环语句","level":"1.2.8","depth":2,"next":{"title":"函数","level":"1.2.9","depth":2,"path":"basics/function.md","ref":"basics/function.md","articles":[]},"previous":{"title":"条件语句","level":"1.2.7","depth":2,"path":"basics/condition.md","ref":"basics/condition.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","highlight","fontsettings","-search","-lunr","ba","github","github-buttons","mermaid-atom-mden"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/WeiJieGitHub/JavaScript-ES5-Tutorials"},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"github-buttons":{"repo":"WeiJieGitHub/JavaScript-ES5-Tutorials","types":["star"],"size":"small"},"mermaid-atom-mden":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["weibo","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"ba":{"token":"b3a5440ccbe24d4b5419be66ad3e3581"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 语言教程","language":"zh","gitbook":"*","description":"面向初学者的 JavaScript 语言教程"},"file":{"path":"basics/loop.md","mtime":"2017-03-28T14:28:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T13:49:34.460Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"循环语句","level":"1.2.8","depth":2,"next":{"title":"函数","level":"1.2.9","depth":2,"path":"basics/function.md","ref":"basics/function.md","articles":[]},"previous":{"title":"条件语句","level":"1.2.7","depth":2,"path":"basics/condition.md","ref":"basics/condition.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","highlight","fontsettings","-search","-lunr","ba","github","github-buttons","mermaid-atom-mden"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/WeiJieGitHub/JavaScript-ES5-Tutorials"},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"github-buttons":{"repo":"WeiJieGitHub/JavaScript-ES5-Tutorials","types":["star"],"size":"small"},"mermaid-atom-mden":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["weibo","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"ba":{"token":"b3a5440ccbe24d4b5419be66ad3e3581"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 语言教程","language":"zh","gitbook":"*","description":"面向初学者的 JavaScript 语言教程"},"file":{"path":"basics/loop.md","mtime":"2017-04-15T12:34:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-15T12:36:54.343Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
